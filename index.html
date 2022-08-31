@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Movie Database</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container flex-column">
+            <header>
+                <section class="heading-section flex-column">
+                    <nav class="navigation flex-row">
+                        <h2 class="heading">Find your film</h2>
+                        <a class="redirect" href="watchlist.html">My Watchlist</a>
+                    </nav>
+                    
+                    <form id="movie-searchbar" class="searchbar flex-row">
+                        <input id="movie-searchbar-input" class="searchbar-input" type="text" required>
+                        <button class="searchbar-btn" type="submit">Search</button>
+                    </form>
+                </section>
+            </header>
+            
+            <main id="movie-section" class="movies-container flex-column">
+                <div class="message">
+                    <img src="images/explore.png">
+                    <p>Start exploring</p>
+                </div>
+            </main>
+        </div>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

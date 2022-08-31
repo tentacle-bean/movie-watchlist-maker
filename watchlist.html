@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Movie Watchlist</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container flex-column">
+            <header>
+                <section class="heading-section flex-column">
+                    <nav class="navigation flex-row">
+                        <h2 class="heading">My Watchlist</h2>
+                        <a class="redirect" href="index.html">Search for movies</a>
+                    </nav>
+                </section>
+            </header>
+            
+            <main id="movie-section" class="movies-container flex-column">
+                <div class="message">
+                    <h3>Your watchlist is looking a little empty...</h3>
+                    <a class="flex-row" href="index.html"><img src="images/plus.png">Let's add some movies!</a>
+                </div>
+            </main>
+        </div>
+        
+        <script src="watchlist.js" type="module"></script>
+    </body>
+</html>
