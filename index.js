@@ -9,7 +9,6 @@ document.getElementById("movie-searchbar").addEventListener("submit", async (eve
     
     const response = await fetch(`http://www.omdbapi.com/?apikey=d4bd5b8a&s=${title}&type=movie`)
     const data = await response.json()
-    console.log(data)
 
     if(data.Response === "True"){
         const moviesInfo = await getMoviesInfo(data.Search.map(movie => movie.imdbID))

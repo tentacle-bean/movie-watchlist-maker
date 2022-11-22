@@ -18,8 +18,6 @@ async function getMoviesInfo(ids){
 
 
 function renderMovies(moviesInfo, adding){
-    console.log(moviesInfo)
-
     const movies = moviesInfo.map((info) => new Movie(info))
 
     const moviesHtml = movies.map(movie => movie.getMovieHtml(adding)).join("")

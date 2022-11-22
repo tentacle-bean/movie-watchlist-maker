@@ -31,7 +31,7 @@ img{
 
 .heading{
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .redirect,
@@ -60,12 +60,12 @@ img{
 
 .message h3{
     color: #787878;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .movie-title{
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: 0.8rem;
 }
 
 .movie-rating,
@@ -73,14 +73,50 @@ img{
 .movie-genres,
 .movie-watchlist-btn{
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.64rem;
 }
 
 .movie-synopsis{
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: 0.64rem;
     line-height: 1.5em;
     color: #A5A5A5;
+}
+
+.searchbar-input,
+.searchbar-btn{
+    font-weight: 500;
+    font-size: 0.64rem;
+}
+
+@media (min-width: 450px){
+    .heading{
+        font-size: 2.5rem;
+    }
+    .message h3{
+        font-size: 1.125rem;
+    }
+    
+    .movie-title{
+        font-size: 1.125rem;
+    }
+    
+    .movie-rating,
+    .movie-length,
+    .movie-genres,
+    .movie-watchlist-btn{
+        font-size: 0.75rem;
+    }
+    
+    .movie-synopsis{
+        font-size: 0.875rem;
+    }
+
+    .searchbar-input,
+    .searchbar-btn{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -147,8 +183,6 @@ img{
     border: none;
     border-radius: 5px;
     padding: 0.75em 2.5em;
-    font-weight: 500;
-    font-size: 0.9rem;
 }
 
 .searchbar-input{
@@ -246,6 +280,13 @@ img{
     width: 0.8em;
 }
 
+.movie-inner-container{
+    margin: 0.5em 0;
+}
+
+.movie-genres{
+    margin: 0 1em;
+}
 
 .movie-watchlist-btn{
     background: none;
